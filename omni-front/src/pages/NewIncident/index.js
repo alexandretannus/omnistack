@@ -30,7 +30,7 @@ export default function NewIncident() {
         try {
             
             // const response = await api.post('ongs', data);
-            await api.post('http://localhost:3333/incidents', data,             {
+            await api.post('incidents', data,             {
                 headers: {
                     Authorization: ongId
                 }

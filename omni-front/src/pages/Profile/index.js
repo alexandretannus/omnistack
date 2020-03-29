@@ -24,7 +24,7 @@ export default function Profile() {
 
     async function handleDeleteIncident(id) {
         try {
-            await api.delete(`http://localhost:3333/incidents/${id}`,             {
+            await api.delete(`incidents/${id}`,             {
                 headers: {
                     Authorization: ongId
                 }
@@ -38,7 +38,7 @@ export default function Profile() {
 
     useEffect(() => {
         api.get(
-            'http://localhost:3333/profile', 
+            'profile', 
             {
                 headers: {
                     Authorization: ongId

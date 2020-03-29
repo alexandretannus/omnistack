@@ -32,7 +32,7 @@ export default function Register() {
         try {
             
             // const response = await api.post('ongs', data);
-            const response = await api.post('http://localhost:3333/ongs', data);
+            const response = await api.post('ongs', data);
     
             alert(`ID de acesso: ${response.data.id}`);
 
